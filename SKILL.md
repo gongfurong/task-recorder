@@ -1,6 +1,16 @@
 ---
 name: task-recorder
-description: Use for task-managed work and progress recording. Strong activate only when the message begins with an explicit task prefix such as task:, Task:, 任务:, 任务：, 开始任务:, 继续任务:, 读取任务:, or when a .tasks/*.md task record is provided. Weak activate for complex/resumable work or semantic intent in any language to track, preserve progress, create/maintain records, convert ongoing work into a managed task, or continue later. IMPORTANT: weak activation must only ask whether to use task-recorder first; do not create records, write files, or enter planning/confirmation until the user answers the opt-in prompt. Listed trigger words are routing hints, not exclusive matches. Supports multilingual task records, recovery, and continuation.
+description: >-
+  Use for task-managed work and progress recording. Strong activate only when
+  the message begins with an explicit task prefix such as task:, Task:, 任务:,
+  任务：, 开始任务:, 继续任务:, 读取任务:, or when a .tasks/*.md task record is
+  provided. Weak activate for complex/resumable work or semantic intent in any
+  language to track, preserve progress, create/maintain records, convert
+  ongoing work into a managed task, or continue later. IMPORTANT: weak
+  activation must only ask whether to use task-recorder first; do not create
+  records, write files, or enter planning/confirmation until the user answers
+  the opt-in prompt. Listed trigger words are routing hints, not exclusive
+  matches. Supports multilingual task records, recovery, and continuation.
 ---
 
 # Task Recorder
