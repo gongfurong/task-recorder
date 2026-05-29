@@ -1,5 +1,7 @@
 # task-recorder
 
+English | [Simplified Chinese](README.zh-CN.md)
+
 `task-recorder` is a portable AI skill that turns long or important AI work into a managed, resumable task.
 
 It makes the assistant ask before executing, keep a durable Markdown task record, preserve goal/scope history, append stage-by-stage progress, record decisions and verification, and leave enough context for a future AI session to continue without rereading the full conversation.
@@ -49,10 +51,9 @@ Use an explicit task prefix at the beginning of the message:
 ```text
 task: implement a CLI parser
 Task: refactor the auth flow
-任务：实现一个 Unity C# 有限状态机
-开始任务：整理项目发布流程
-继续任务：.tasks/unity-fsm.md
-读取任务：.tasks/release-plan.md
+start task: organize a release workflow
+continue task: .tasks/unity-fsm.md
+read task: .tasks/release-plan.md
 ```
 
 Providing a `.tasks/*.md` task record also activates recovery behavior.
@@ -113,7 +114,7 @@ After opt-in, the assistant summarizes inferred context, marks uncertainties, as
 Give the assistant a `.tasks/*.md` record or path:
 
 ```text
-继续任务：.tasks/unity-fsm.md
+continue task: .tasks/unity-fsm.md
 ```
 
 The assistant should summarize status, goal, completed work, next step, and blockers before continuing.
@@ -172,7 +173,7 @@ Restart the CLI after installing or updating the skill.
 After installing and restarting your CLI, try:
 
 ```text
-任务：实现一个小工具并记录过程
+task: implement a small utility and keep a task record
 ```
 
 Expected behavior:
@@ -184,7 +185,7 @@ Expected behavior:
 Weak activation test:
 
 ```text
-请保留当前进度，方便后续新会话继续。
+Please preserve the current progress so we can continue in a new chat later.
 ```
 
 Expected behavior:
