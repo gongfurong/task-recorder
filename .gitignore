@@ -1,0 +1,25 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Generated task records in test projects
+.tasks/
+
+# Common package/build outputs if tooling is added later
+node_modules/
+dist/
+build/
+coverage/
+.pytest_cache/
+__pycache__/
